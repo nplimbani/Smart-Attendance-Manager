@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_back"
+    android:orientation="vertical"
+    tools:context="com.example.denish.smartattendencemanagment.Activity.UserAcessActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+        <TextView
+            android:id="@+id/txt_wlc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_logout"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:src="@drawable/logout" />
+
+        <TextView
+            android:id="@+id/txt_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_logout"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:text="Logout"
+            android:textColor="#fff"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/sp_branch"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/spinner_layout"
+                android:popupBackground="#6571d7">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/sp_semester"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/spinner_layout"
+                android:popupBackground="#6571d7"
+                android:tint="#fff">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/sp_class"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/spinner_layout"
+                android:popupBackground="#6571d7"
+                android:tint="#fff">
+
+            </Spinner>
+
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

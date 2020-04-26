@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_back"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Smart Attendance Manager"
+            android:textColor="#fff"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="Email Id"
+            android:textColor="#fff"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_loginemail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/border"
+            android:hint="example@xyz.com"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:padding="@dimen/_10sdp"
+            android:textColorHint="#EAECEE"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Password"
+            android:textColor="#fff"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/border"
+            android:hint="password"
+            android:textColor="#fff"
+            android:inputType="textPassword"
+            android:padding="@dimen/_10sdp"
+            android:textColorHint="#EAECEE"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/txt_forgetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_170sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Forget Password ?"
+            android:textColor="#fff"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="3dp"
+            android:background="#656fc9"></View>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:text="Login" />
+
+
+        <TextView
+            android:id="@+id/txt_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="Don't have an account ? Sign Up"
+            android:textColor="#fff"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_55sdp"
+            android:background="#656fc9"
+            android:gravity="center"></View>
+
+
+    </LinearLayout>
+
+</ScrollView>

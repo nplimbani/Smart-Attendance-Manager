@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_back"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context="com.example.denish.smartattendencemanagment.Activity.SignupActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="#fff"></View>
+
+    <EditText
+        android:id="@+id/et_Signupname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/border"
+        android:hint="Faculty Name"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="@dimen/_13sdp" />
+
+    <EditText
+        android:id="@+id/et_Signupemail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/border"
+        android:hint="Email Id"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="@dimen/_13sdp" />
+
+    <EditText
+        android:id="@+id/et_Signup_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/border"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="@dimen/_13sdp" />
+
+    <EditText
+        android:id="@+id/et_Signup_mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/border"
+        android:hint="Mobile No"
+        android:inputType="number"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="@dimen/_13sdp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/btn_shape"
+        android:text="Submit" />
+</LinearLayout>
